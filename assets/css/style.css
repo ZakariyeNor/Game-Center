@@ -60,7 +60,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 45px;
 }
 
@@ -71,4 +71,13 @@ footer {
 
 a i {
     color: rgb(43, 156, 226);
+}
+
+#social h2 {
+    font-family: 'lato', sans-serif;
+    font-style: italic;
+    color: coral;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 10px;
 }
