@@ -43,16 +43,32 @@ header {
     list-style-type: none;
 }
 
-#game {
-    width: 80%;
-    height: 50vh;
-    margin: 90px auto;
+#middle {
+    height: 80vh;
+    width: 100%;
+    background-color: antiquewhite;
 }
 
-#game .calculator {
+footer {
     width: 100%;
+    height: 10vh;
     background-color: aliceblue;
+}
+
+#social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 50vh;
-    border-radius: 15px;
+    padding-top: 30px;
+    padding-left: 45px;
+}
+
+#social ul li {
+    list-style-type: none;
+    width: 25%;
+}
+
+a i {
+    color: rgb(43, 156, 226);
 }
