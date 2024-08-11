@@ -81,3 +81,13 @@ a i {
     text-align: center;
     padding-top: 10px;
 }
+
+.fa-gamepad {
+    color: rgb(43, 156, 226);
+    right: 12px;
+}
+
+.fa-greater-than-equal {
+    color: rgb(43, 156, 226);
+    left: 12px;
+}
