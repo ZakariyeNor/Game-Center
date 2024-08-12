@@ -36,7 +36,7 @@ header {
 }
 
 
-#middle {
+#quiz {
     height: 80vh;
     width: 100%;
     background-color: #d3d6dd;
@@ -84,6 +84,13 @@ a i {
 .fa-greater-than-equal {
     color: rgb(43, 156, 226);
     left: 12px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
