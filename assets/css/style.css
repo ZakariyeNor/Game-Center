@@ -81,10 +81,20 @@ header {
     text-align: left;
     padding: 15px;
     background-color: transparent;
-    border-color: #0000007e;border-radius: 8px
+    border-color: #0000007e;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    
 }
 
-
+.opt:hover{
+    background: #190b0b;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+}
 
 footer {
     width: 100%;
