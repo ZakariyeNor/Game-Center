@@ -46,7 +46,7 @@ header {
 #middle {
     height: 80vh;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #d3d6dd;
 }
 
 footer {
@@ -127,4 +127,10 @@ a i {
 #social ul {
     padding-left: 120px;
 }
+}
+
+@media screen and (min-width: 992px) {
+    #social ul {
+        padding-left: 300px;
+    }
 }
