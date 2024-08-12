@@ -26,7 +26,6 @@ body {
 header a {
     text-decoration: none;
     color: coral;
-
 }
 
 header {
@@ -39,9 +38,6 @@ header {
     height: 10vh;
 }
 
-.navbar li {
-    list-style-type: none;
-}
 
 #middle {
     height: 80vh;
