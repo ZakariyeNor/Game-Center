@@ -156,11 +156,20 @@ a i {
 
 .question .next {
     padding: 10px;
-    background-color: #6da0c7;
-    font-size: 16px;
+    background-color: #208fe4;
+    font-size: 21px;
     font-weight: 500;
     width: 200px;
     right: -50px;
+    border-radius: 5px;
+    border-color: transparent;
+    display: none;
+}
+
+.question .next:hover {
+    background-color: darkgreen;
+    color: #fff;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 576px)  {
@@ -232,6 +241,10 @@ a i {
 @media screen and (min-width: 1200px) {
 
     .quiz-area {
-        height: 70vh;
+        height: 60vh;
+    }
+
+    .question .next {
+        margin-top: 20px;
     }
 }
