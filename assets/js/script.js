@@ -201,4 +201,9 @@ const myQuestions = [
     }
 ];
 
-]
+let question = document.getElementsByClassName('question');
+
+let answer = document.getElementsByClassName('answer');
+
+let next = document.getElementsByClassName('next');
+
