@@ -154,6 +154,15 @@ a i {
     display: none;
 }
 
+.question .next {
+    padding: 10px;
+    background-color: #6da0c7;
+    font-size: 16px;
+    font-weight: 500;
+    width: 200px;
+    right: -50px;
+}
+
 @media screen and (max-width: 576px)  {
     #quiz {
         display: flex;
@@ -167,7 +176,6 @@ a i {
     }
 
 }
-
 
 @media screen and (min-width: 768px) {
     header {
