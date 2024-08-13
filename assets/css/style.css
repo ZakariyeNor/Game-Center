@@ -154,6 +154,21 @@ a i {
     display: none;
 }
 
+@media screen and (max-width: 576px)  {
+    #quiz {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .quiz-area {
+        height: fit-content;
+    }
+
+}
+
+
 @media screen and (min-width: 768px) {
     header {
         padding: 40px 30px;
@@ -189,11 +204,26 @@ a i {
 #social ul {
     padding-left: 120px;
 }
+
+.quiz-area {
+    height: 50vh;
+}
+
 }
 
 @media screen and (min-width: 992px) {
     #social ul {
         padding-left: 300px;
     }
+
+    .quiz-area {
+        height: 40vh;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+
+    .quiz-area {
+        height: 70vh;
+    }
+}
