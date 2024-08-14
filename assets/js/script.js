@@ -9,4 +9,19 @@ start.addEventListener('click', quizDisplay)
 function quizDisplay() {
     start.classList.add('hid')
     quizQ.classList.remove('hid')
+    displayNextQuestion()
 }
+
+const myQuestions = [
+    {
+        questionJ: 'Who painted the Mona Lisa?',
+        answerJ: [
+            { text: 'Vincent van Gogh', correct: false },
+            { text: 'Pablo Picasso', correct: false },
+            { text: 'Leonardo da Vinci', correct: true },
+            { text: 'Claude Monet', correct: false },
+
+        ]
+    }
+]
+
