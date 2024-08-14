@@ -4,10 +4,15 @@ const start = document.getElementById('strt');
 
 const quizQ = document.getElementById('quiz-q');
 
+let questionPosition = 0;
+let randomQuestions
+
 start.addEventListener('click', quizDisplay)
 
 function quizDisplay() {
     start.classList.add('hid')
+    randomQuestions = myQuestions.sort(() => Math.floor(Math.random() * 15); )
+    questionPosition = 0;
     quizQ.classList.remove('hid')
     displayNextQuestion()
 }
