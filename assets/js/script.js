@@ -4,14 +4,17 @@ const start = document.getElementById('strt');
 
 const quizQ = document.getElementById('quiz-q');
 
+const question = document.getElementById('que');
+const answer = document.getElementById('ans');
+
 let questionPosition = 0;
-let randomQuestions = [];
+let randomQuestions
 
 start.addEventListener('click', quizDisplay)
 
 function quizDisplay() {
     start.classList.add('hid')
-    randomQuestions = myQuestions.sort(() => Math.floor(Math.random() - .5);
+    randomQuestions = myQuestions.sort(() => Math.random() - .5);
     questionPosition = 0;
     quizQ.classList.remove('hid')
     displayNextQuestion()
@@ -155,4 +158,13 @@ const myQuestions = [
         ]
     }
 ];
+
+
+function displayNextQuestion() {
+    showQuestion(randomQuestions[questionPosition])
+}
+
+function showQuestion(questionJ) {
+    question.innerText = questionJ.questionJ
+}
 
