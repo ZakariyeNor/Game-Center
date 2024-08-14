@@ -5,5 +5,5 @@ const start = document.getElementById('strt');
 start.addEventListener('click', quizDisplay)
 
 function quizDisplay() {
-    console.log('Played')
+    start.classList.add('hid')
 }
