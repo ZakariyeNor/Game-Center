@@ -215,5 +215,13 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     next.innerHTML = "Next"
-    revealQuestion();
+    revealQuestion(); 
+}
+
+function revealQuestion() {
+    let currentQuestion = myQuestions[currentQuestionIndex];
+
+    let questionNo = currentQuestionIndex + 1;
+
+    questionElement.innerHTML = questionNo + "." + currentQuestion.myQuestions;
 }
