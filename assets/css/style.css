@@ -179,6 +179,16 @@ a i {
     font-weight: 700;
 }
 
+.opt.correct {
+    background-color: green;
+    color: white;
+}
+
+.opt.incorrect {
+    background-color: red;
+    color: white;
+}
+
 @media screen and (max-width: 576px)  {
     #quiz {
         display: flex;
