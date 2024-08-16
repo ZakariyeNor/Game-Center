@@ -31,15 +31,31 @@
             <div class="question" id="que"><h2>1. Who painted the Mona Lisa?</h2>
             
                 <div class="answer" id="ans">
-                    <button class="opt"><span hidden>a:</span> Vincent van Gogh</button>
-                    <button class="opt"><span hidden>b:</span> Pablo Picasso</button>
-                    <button class="opt"><span hidden>c:</span> Leonardo da Vinci</button>
-                    <button class="opt"><span hidden>d:</span> Claude Monet</button>
+                    <button class="opt" data-correct="false">Vincent van Gogh</button>
+                    <button class="opt" data-correct="false">Pablo Picasso</button>
+                    <button class="opt" data-correct="true">Leonardo da Vinci</button>
+                    <button class="opt" data-correct="false">Claude Monet</button>
                 </div>
-                <button class="next">Next</button>
+                <button id="level" class="next">Next</button>
             
            </div>
            </div>
+
+             <!-- Question 2 -->
+    <div id="quiz-q1" class="quiz-area hid">
+        <h1>General Knowledge Quiz</h1>
+        <div><h2>2. What is the capital of France?</h2>
+        <div class="answer" id="ans2">
+            <button class="opt" data-correct="false">Berlin</button>
+            <button class="opt" data-correct="false">Madrid</button>
+            <button class="opt" data-correct="true">Paris</button>
+            <button class="opt" data-correct="false">Rome</button>
+        </div>
+        <button class="next">Next</button>
+        </div>
+    </div>
+
+
 
         </main>
 
