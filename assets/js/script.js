@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const start = document.getElementById('strt');
     const quizQ = document.getElementById('quiz-q');    
-    
+    let restart = document.getElementById('resta');
     let currentQuestionIndex = 0;
 
     start.addEventListener('click', quizDisplay);
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     document.querySelectorAll('.next').forEach((button) => {
+        button.addEventListener('click', function() {
         if (currentQuestionIndex < document.querySelectorAll('.quiz-area').length - 1) {
             currentQuestionIndex++;
             showQuestion(currentQuestionIndex);
@@ -49,8 +50,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
 function endTheQuiz() {
     alert('End Of Quiz');
     quizQ.classList.add('hid');
-    
-}
+    restart.classList.add('hid');
+    }
+
+    restart.addEventListener('click', function() {
+        currentQuestionIndex = 0;
+        resetQuiz();
+    });
+    function resetQuiz() {
+        document.querySelectorAll('quiz-area').forEach((quiz) => {
+            quiz.classList.add('hid');
+            const answerChoices = quiz.querySelectorAll('.answer .opt');
+            answerChoices.forEach((choice) => {
+                choice.classList.remove('correct', 'incorrect');
+                choice.removeAttribute('disabled');
+            });
+        });
+        start.classList.remove('hid');
+        quizQ.classList.add('hid');
+        restart.classList.add('hid');
+    }
+
+});
+
+
