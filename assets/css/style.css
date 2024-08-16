@@ -189,6 +189,11 @@ a i {
     color: white;
 }
 
+.opt[disabled] {
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+
 @media screen and (max-width: 576px)  {
     #quiz {
         display: flex;
