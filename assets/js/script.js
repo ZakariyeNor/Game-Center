@@ -33,6 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
-    });
+    }
 
-}
+});
+
+    const nextQuestion = document.getElementById('level');
+    level.addEventListener('click', function() {
+        if (currentQuestionIndex < document.querySelectorAll('.quiz-area').length - 1) {
+            currentQuestionIndex++;
+            showQuestion(currentQuestionIndex);
+        } else {
+            alert('End of quiz');
+        }
+    });
