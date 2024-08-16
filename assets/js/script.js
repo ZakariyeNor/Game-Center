@@ -51,5 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function endTheQuiz() {
     alert('End Of Quiz');
+    quizQ.classList.add('hid');
     
 }
