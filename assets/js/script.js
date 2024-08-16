@@ -35,10 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     }
 
-});
 
-    const nextQuestion = document.getElementById('level');
-    level.addEventListener('click', function() {
+
+    document.querySelectorAll('.next').forEach((button) => {
         if (currentQuestionIndex < document.querySelectorAll('.quiz-area').length - 1) {
             currentQuestionIndex++;
             showQuestion(currentQuestionIndex);
@@ -46,3 +45,5 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('End of quiz');
         }
     });
+
+});
