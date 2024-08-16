@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             restart.classList.add('hid');
             start.classList.add('hid');
-            quizQ.classList.add('hid');
         }
     
     }
