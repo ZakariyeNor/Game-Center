@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
                  });
             }
         });
+
+        if (indx === document.querySelectorAll('.quiz-area').length - 1) {
+            restart.classList.remove('hid');
+        } else {
+            restart.classList.add('hid');
+            start.classList.add('hid');
+            quizQ.classList.add('hid');
+        }
     
     }
 
@@ -74,11 +82,7 @@ function endTheQuiz() {
         quizQ.classList.add('hid');
         restart.classList.add('hid');
     }
+
     
-    if (indx === document.querySelectorAll('.quiz-area').length - 1) {
-        restart.classList.remove('hid');
-    } else {
-        restart.classList.add('hid');
-    }
 
 });
