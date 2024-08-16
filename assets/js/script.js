@@ -42,8 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
             currentQuestionIndex++;
             showQuestion(currentQuestionIndex);
         } else {
-            alert('End of quiz');
+            endTheQuiz()
+
         }
     });
 
 });
+
+function endTheQuiz() {
+    alert('End Of Quiz');
+    
+}

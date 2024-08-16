@@ -162,7 +162,7 @@ a i {
     background-color: #20e49f96;
 }
 
-.question .next {
+.question .next, .restart {
     padding: 10px;
     background-color: #208fe4;
     font-size: 21px;
