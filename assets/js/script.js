@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
         showQuestion(currentQuestionIndex);
     }
 
-    function showQuestion(indx) {
+    function showQuestion(currentQuestionIndex) {
         document.querySelectorAll('.quiz-area').forEach((quiz, inx) => {
             quiz.classList.add('hid');
-            if(inx === indx) {
+            if(inx === currentQuestionIndex) {
                 quiz.classList.remove('hid');
                 const answerChoices = quiz.querySelectorAll('.answer .opt');
                 const correctAnswerIndex = Array.from(answerChoices).findIndex(choice => choice.getAttribute('data-correct') === 'true');
@@ -26,15 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     choice.addEventListener('click', function() {
                         answerChoices.forEach(btn => btn.setAttribute('disabled', true));
                         if(index === correctAnswerIndex) {
+                            console.log('correct')
                             choice.classList.add('correct');
                             correctAnswers++;
 
-                             if (index === document.querySelectorAll('.quiz-area').length -1) {
-                                endTheQuiz();
-                            }
                         } else {
+                            console.log('incorrect')
                             choice.classList.add('incorrect');
                             incorrectAnswers++;
+                        }
+
+                        if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length -1) {
+                            endTheQuiz();
                         }
                     });
                  });
@@ -79,8 +82,9 @@ function endTheQuiz() {
     } else {
         resultMessage = `You got ${correctAnswers} correct and ${incorrectAnswers} wrong out of ${totalQuestions} questions.`;
     }
-
     alert(resultMessage);
+
+    
     quizQ.classList.add('hid');
     restart.classList.add('hid');
     }
