@@ -42,20 +42,6 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ![Area Features](assets/mockups/resart_btn.png) ![Area Features](assets/mockups/one_opt.png)
 
-- __The About Page__
-
-  - This page is valuable both to the user and the institute, the users can get the answers of the course, options they have when it come the payment options and they can get the information or the history about the institute.  
-  - The institute gives the user the curriculum, the two option payment plans and confidence to choose in this particular institute to learn non verbal communications because of their experience and well educated instructors. 
-
-![About Page](media/about_page.png)
-
-- __The Sign Up Page__
-
-  - This section will allow the user to send their personal information and payment option to learn the body language "Nonverbal Communication" course.
-  - In the sign up page the user will be asked to submit their first, last name, email, phone number, and the payment option they would like to choose.
-
-![Sign Up](media/sign-up_page.png)
-
 ### Features Left to Implement
 
 - Make the questions random.
@@ -63,11 +49,11 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 ## MockUps and wireframes
   - I use simple, consistent page layouts and responsive design.
 
-### Header, ### Landing Page and ### Footer
+### Header, Landing Page and Footer
   ![One Pic](assets/mockups/figdesign.png)
 
 ### quiz-area 
-  ![UFE Page](media/ufe-fig.png)
+  ![Quiz Area Design](assets/mockups/quiz_figdesign.png)
 
 
 ## Testing
