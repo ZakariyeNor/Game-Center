@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const quizQ = document.getElementById('quiz-q');    
     let restart = document.getElementById('resta');
     let currentQuestionIndex = 0;
+    let correctAnswers = 0;
+    let incorrectAnswers = 0;
 
     start.addEventListener('click', quizDisplay);
 
@@ -25,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         answerChoices.forEach(btn => btn.setAttribute('disabled', true));
                         if(index === correctAnswerIndex) {
                             choice.classList.add('correct');
+                            correctAnswers++;
                         } else {
                             choice.classList.add('incorrect');
+                            incorrectAnswers++;
                         }
                     });
                  });
@@ -83,7 +87,4 @@ function endTheQuiz() {
         quizQ.classList.add('hid');
         restart.classList.add('hid');
     }
-
-    
-
 });
