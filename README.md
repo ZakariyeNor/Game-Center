@@ -30,18 +30,17 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 - __Quiz Area__ 
 
-  - In the quiz area there are, area title, question, four answers options, next button and the restart button. 
-  - When the next button is clicked it shows the nextQuestion till the last questions where the next button will be hidden and the restart button be vissible.
-  - If the user clicks on the restart button it takes to the front page.
+  - In the quiz area there are, area title, question, four answer options, next button and the restart button. 
 
 ![Quiz Area](assets/mockups/quiz_area.png)
 
-- __Define Section__ 
+- __Quiz Area Features__ 
 
-  - While the define section defines the two major categories of body language and gives the user the ability to understand the difference between physical signals and emotional feelings. 
-  - The picture tells how a person looks like when the eyebrow flashing and the text describes difference between open and closed body language.
+ - When the next button is clicked it shows the nextQuestion till the last questions where the next button will be hidden and the restart button be vissible.
+- The user can choose one answer each question, if it's right one it changes to the green background Color if not it changes to the red.
+ - If the user clicks on the restart button it takes to the front page.
 
-![Define Section](media/define_section.png)
+![Area Features](assets/mockups/hover.png) ![Area Features](assets/mockups/resart_btn.png) ![Area Features](assets/mockups/one_opt.png)
 
 - __The About Page__
 
