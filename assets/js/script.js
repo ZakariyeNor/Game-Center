@@ -34,8 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (indx === document.querySelectorAll('.quiz-area').length - 1) {
+            document.querySelectorAll('.next').forEach(button => button.classList.add('hid'));
             restart.classList.remove('hid');
         } else {
+            alert('End Of Quiz');
+            document.querySelectorAll('.next').forEach(button => button.classList.remove('hid'));
             restart.classList.add('hid');
             start.classList.add('hid');
         }
@@ -59,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function endTheQuiz() {
-    alert('End Of Quiz');
     quizQ.classList.add('hid');
     restart.classList.add('hid');
     }
@@ -69,7 +71,7 @@ function endTheQuiz() {
         resetQuiz();
     });
     function resetQuiz() {
-        document.querySelectorAll('quiz-area').forEach((quiz) => {
+        document.querySelectorAll('.quiz-area').forEach((quiz) => {
             quiz.classList.add('hid');
             const answerChoices = quiz.querySelectorAll('.answer .opt');
             answerChoices.forEach((choice) => {
