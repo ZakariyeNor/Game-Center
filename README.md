@@ -1,4 +1,4 @@
-# Game Center
+# QUIS GAME
 
 Welcome to the General Knowledge Quiz Game! This engaging and educational game is designed to challenge your knowledge across a broad range of topics. Whether you're a trivia enthusiast or just looking to test your wits, this game offers a fun and interactive way to learn and compete.
 ![Responsice Mockup](assets/mockups/responsive.png)
@@ -58,15 +58,17 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ## Testing
 
-- You can find the testing document in the. 
-* * Silver-engine/assets/text.info
+- You can find the testing document in the document folder. 
+* * Game Center/assets/documents/testing.
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](Read in text.info in assets)
+  - Errors were found when passing through the official [W3C validator](Read in the documents folder in assets)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](Read in text.info in assets)
+  - No errors were found when passing through the official [(Jigsaw) validator](Read in the documents folder in assets)
+- JavaScript
+  - Errors were found when passing through the official [(JSHint) validator](Read in the documents folder in assets)
 
 ## Deployment
 
