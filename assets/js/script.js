@@ -65,7 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function endTheQuiz() {
-    alert('End Of Quiz');
+    let totalQuestions = document.querySelectorAll('.quiz-area').length;
+    let resultMessage;
+
+    if (correctAnswers === totalQuestions) {
+        resultMessage = `Congrats! You got all ${correctAnswers} questions correct!`;
+    } else if (incorrectAnswers === totalQuestions) {
+        resultMessage = `Try again! You got all ${incorrectAnswers} questions wrong.`;
+    } else {
+        resultMessage = `You got ${correctAnswers} correct and ${incorrectAnswers} wrong out of ${totalQuestions} questions.`;
+    }
+
+    alert(resultMessage);
     quizQ.classList.add('hid');
     restart.classList.add('hid');
     }
