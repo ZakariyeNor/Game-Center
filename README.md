@@ -7,12 +7,12 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Header__
 
-  - Navigation bar includes links to all four pages home, about, ufe and sign-up page. Navigation bar is full responsive and consistent.
-  - The user can navigate easily using navigation bar from page to page. 
+  - header contains just the page title.
+  - The user can navigate easily using header logo, just clicking on it takes the user to the front page. 
 
-![Nav Bar](media/header_home.png)
+![Header / Logo](assets/mockups/header.png)
 
 - __The Intro Section__
 
