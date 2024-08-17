@@ -21,26 +21,20 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ![Landing Page](assets/mockups/landing_page.png)
 
-- __The Topic Section__
-
-  - The topic section has text that give the user introduction about the body language and key compenets of physical body signals or actions. 
-  - This part of the page answers the main questions of the body language. 
-
-![Club Ethos](media/topic_section.png)
-
 - __The Footer__ 
 
-  - The footer section contains important information such as contact details, social media links. It provides additional resources for users. 
-  - Users can also hover over or click on the footer links to access more detailed information about the website and its contents. If they have any specific questions or need further clarification, users can also reach out to the website's contact information provided in the footer.
+  - The footer section contains important information such as social media links. and the page logo. 
+  - Users can also hover over or click on the footer links to access more detailed information about the website and the game rules.
 
-![Footer](media/footer.png)
+![Footer](assets/mockups/footer.png)
 
-- __Facial Section__ 
+- __Quiz Area__ 
 
-  - The facial section describes and explains what ufe is and tells to the user the key components of emotional expression. 
-  - The user can learn what is emotional expression and how to undrstand it.
+  - In the quiz area there are, area title, question, four answers options, next button and the restart button. 
+  - When the next button is clicked it shows the nextQuestion till the last questions where the next button will be hidden and the restart button be vissible.
+  - If the user clicks on the restart button it takes to the front page.
 
-![Facial Section](media/facial_section.png)
+![Quiz Area](assets/mockups/quiz_area.png)
 
 - __Define Section__ 
 
