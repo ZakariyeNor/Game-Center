@@ -195,11 +195,25 @@ a i {
 }
 
 @media screen and (max-width: 576px)  {
-    #quiz {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        padding-top: 40px;
+    .quiz-area h1 {
+        font-size: 19px;
+    }
+
+    .question h2 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+    .quiz-area {
+        height: fit-content;
+    }
+
+}
+
+@media screen and (min-width: 576px)  {
+    
+    .quiz-area h1 {
+        font-size: 23px;
     }
 
     .quiz-area {
