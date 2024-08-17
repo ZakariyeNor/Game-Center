@@ -197,15 +197,21 @@ a i {
 @media screen and (max-width: 576px)  {
     .quiz-area h1 {
         font-size: 19px;
+        font-weight: 500;
     }
 
     .question h2 {
     font-weight: 400;
     font-size: 16px;
-}
+    }
 
     .quiz-area {
         height: fit-content;
+    }
+
+    .opt {
+        font-weight: 400;
+        font-size: 14px;
     }
 
 }
@@ -214,10 +220,21 @@ a i {
     
     .quiz-area h1 {
         font-size: 23px;
+        font-weight: 500;
+    }
+
+    .question h2 {
+        font-weight: 400;
+        font-size: 19px;
     }
 
     .quiz-area {
         height: fit-content;
+    }
+
+    .opt {
+        font-weight: 400;
+        font-size: 15px;
     }
 
 }
@@ -258,8 +275,24 @@ a i {
     padding-left: 120px;
 }
 
+
+.quiz-area h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.question h2 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
 .quiz-area {
-    height: 50vh;
+    height: fit-content;
+}
+
+.opt {
+    font-weight: 500;
+    font-size: 15px;
 }
 
 }
@@ -268,19 +301,49 @@ a i {
     #social ul {
         padding-left: 300px;
     }
-
+    
+    .quiz-area h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .question h2 {
+        font-weight: 600;
+        font-size: 29px;
+    }
+    
     .quiz-area {
-        height: 40vh;
+        height: fit-content;
+    }
+    
+    .opt {
+        font-weight: 500;
+        font-size: 18px;
     }
 }
 
 @media screen and (min-width: 1200px) {
 
-    .quiz-area {
-        height: 60vh;
+    .question .next, .restart {
+        margin-top: 20px;
     }
 
-    .question .next {
-        margin-top: 20px;
+    .quiz-area h1 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .question h2 {
+        font-weight: 600;
+        font-size: 29px;
+    }
+    
+    .quiz-area {
+        height: fit-content;
+    }
+    
+    .opt {
+        font-weight: 500;
+        font-size: 18px;
     }
 }
