@@ -14,12 +14,12 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ![Header / Logo](assets/mockups/header.png)
 
-- __The Intro Section__
+- __The Landing Page__
 
-  - This part of the page has background-image of the Institute and some introduction text about the Institute. 
-  - The intro section has also feature that allows the user can learn more about the course.
+  - The landing bage is where the user can start the quiz and there is a start button. 
+  - The user can wxperience the hover effects and clicking on it can he/she start the quiz.
 
-![Landing Page](media/intro_section.png)
+![Landing Page](assets/mockups/landing_page.png)
 
 - __The Topic Section__
 
