@@ -40,7 +40,7 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 - The user can choose one answer each question, if it's right one it changes to the green background Color if not it changes to the red.
  - If the user clicks on the restart button it takes to the front page.
 
-![Area Features](assets/mockups/hover.png) ![Area Features](assets/mockups/resart_btn.png) ![Area Features](assets/mockups/one_opt.png)
+![Area Features](assets/mockups/resart_btn.png) ![Area Features](assets/mockups/one_opt.png)
 
 - __The About Page__
 
@@ -58,22 +58,17 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ### Features Left to Implement
 
-- Make payment option in a separate section.
+- Make the questions random.
 
-## Visuals
-  - I use simple, consistent page layouts were used across four pages.
+## MockUps and wireframes
+  - I use simple, consistent page layouts and responsive design.
 
-### Landing Page 
-  ![Home Page](media/home-fig.png)
+### Header, ### Landing Page and ### Footer
+  ![One Pic](assets/mockups/figdesign.png)
 
-### UFE Page 
+### quiz-area 
   ![UFE Page](media/ufe-fig.png)
 
-### About Page 
-  ![About Page](media/about-fig.png)
-
-### Sign-up Page 
-  ![Sign-up Page](media/sign-up-fig.png)
 
 ## Testing
 
