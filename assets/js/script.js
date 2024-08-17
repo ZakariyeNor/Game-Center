@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length -1) {
                             endTheQuiz();
+                            restart.classList.remove('hid');
                         }
                     });
                  });
