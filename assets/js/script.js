@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             choice.classList.add('correct');
                             correctAnswers++;
 
-                            if (index === document.querySelectorAll('.quiz-area').length -1) {
+                             if (index === document.querySelectorAll('.quiz-area').length -1) {
                                 endTheQuiz();
                             }
                         } else {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        if (indx === document.querySelectorAll('.quiz-area').length - 1) {
+        if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length - 1) {
             document.querySelectorAll('.next').forEach(button => button.classList.add('hid'));
             restart.classList.remove('hid');
         } else {
@@ -103,3 +103,4 @@ function endTheQuiz() {
         restart.classList.add('hid');
     }
 });
+
