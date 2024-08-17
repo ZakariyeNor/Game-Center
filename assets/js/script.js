@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.next').forEach(button => button.classList.add('hid'));
             restart.classList.remove('hid');
         } else {
-            alert('End Of Quiz');
             document.querySelectorAll('.next').forEach(button => button.classList.remove('hid'));
             restart.classList.add('hid');
             start.classList.add('hid');
@@ -62,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function endTheQuiz() {
+    alert('End Of Quiz');
     quizQ.classList.add('hid');
     restart.classList.add('hid');
     }
