@@ -1,4 +1,4 @@
-# QUIS GAME
+# QUIZ GAME
 
 Welcome to the General Knowledge Quiz Game! This engaging and educational game is designed to challenge your knowledge across a broad range of topics. Whether you're a trivia enthusiast or just looking to test your wits, this game offers a fun and interactive way to learn and compete.
 ![Responsice Mockup](assets/mockups/responsive.png)
