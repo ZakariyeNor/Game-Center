@@ -1,3 +1,8 @@
+/* JavaScript esversion: 6 */
+{
+    "esversion"; 6
+  }
+
 // Wait for the DOM to load before executing the script 
 document.addEventListener('DOMContentLoaded', function() {
 
