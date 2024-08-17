@@ -1,16 +1,20 @@
-/* Google fonts link */
+/* Google fonts link 'lato' and 'Raleway' */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* Reset margin, padding, and ensure consistent box-sizing across all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set full height and width for the body */
 body {
     height: 100vh;
     width: 100%;
 }
+/* Style the header and other elements to cover the full viewport with a background color, font-weigth, font-size, text styles and box-shadow*/
 
 #higher {
     background-color: rgb(10, 69, 108);
@@ -35,7 +39,7 @@ header {
     height: 10vh;
 }
 
-
+/* Quiz area styles, color, font-weights, sizes paddings, hovers and background colors. */
 #quiz {
     height: 80vh;
     width: 100%;
@@ -69,6 +73,7 @@ header {
     padding: 30px;
 }
 
+/* Questions styles e.g: when the user clicks some of them or one of them and hover over them */
 .question  h2{
    margin-bottom: 20px;
    font-weight: 500;
@@ -95,17 +100,73 @@ header {
     font-size: 19px;
     font-weight: 600;
 }
+/* background colors, font weights, sizes, hovers and other effektd for the next and restart button */
+.question .next, .restart {
+    padding: 10px;
+    background-color: #208fe4;
+    font-size: 21px;
+    font-weight: 500;
+    width: 200px;
+    right: -50px;
+    border-radius: 5px;
+    border-color: transparent;
+}
 
+.question .next:hover {
+    background-color: darkgreen;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Effects for the answer buttons if the user gets right */
+.opt.correct {
+    background-color: green;
+    color: white;
+}
+
+/* Effects for the answer buttons if the user gets wrong */
+.opt.incorrect {
+    background-color: red;
+    color: white;
+}
+
+/* style for the Start (let's start) button */
+.start button {
+    font-size: 50px;
+    font-family: 'lato', sans-serif;
+    font-weight: 500;
+    background-color: #6da0c7;
+    height: 20px 30px;
+    padding: 15px;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+}
+/* Start button hover */
+.start button:hover {
+    font-weight: 600;
+    background-color: #20e49f96;
+}
+
+/* the background color of the answer buttons if the user hover over after he/she choose one of the options.   */
+.opt[disabled] {
+    color: #b0b0b0;
+    cursor: not-allowed;
+}
+/* Elements to hide will take this class rule */
 .hid {
     display: none;
 }
 
+/* Footer background color, font size, font weight and padding */
 footer {
     width: 100%;
     height: 10vh;
     background-color: #c9d2da;
 }
-
+/* Aligning the icons, padding and positioning them, their color, header or logo text styles */
 #social ul {
     display: flex;
     justify-content: center;
@@ -142,58 +203,7 @@ a i {
     color: rgb(43, 156, 226);
     left: 12px;
 }
-
-.start button {
-    font-size: 50px;
-    font-family: 'lato', sans-serif;
-    font-weight: 500;
-    background-color: #6da0c7;
-    height: 20px 30px;
-    padding: 15px;
-    outline: none;
-    border-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    color: #fff;
-}
-
-.start button:hover {
-    font-weight: 600;
-    background-color: #20e49f96;
-}
-
-.question .next, .restart {
-    padding: 10px;
-    background-color: #208fe4;
-    font-size: 21px;
-    font-weight: 500;
-    width: 200px;
-    right: -50px;
-    border-radius: 5px;
-    border-color: transparent;
-}
-
-.question .next:hover {
-    background-color: darkgreen;
-    color: #fff;
-    font-weight: 700;
-}
-
-.opt.correct {
-    background-color: green;
-    color: white;
-}
-
-.opt.incorrect {
-    background-color: red;
-    color: white;
-}
-
-.opt[disabled] {
-    color: #b0b0b0;
-    cursor: not-allowed;
-}
-
+/* @media query for extra smaller phone screens (max-width: 576px) */
 @media screen and (max-width: 576px)  {
     .quiz-area h1 {
         font-size: 19px;
@@ -216,6 +226,7 @@ a i {
 
 }
 
+/* @media query for smaller and larger phone screens (min-width: 576px) */
 @media screen and (min-width: 576px)  {
     
     .quiz-area h1 {
@@ -239,6 +250,7 @@ a i {
 
 }
 
+/* @media query for laptops and tablet screens (min-width: 768px) */
 @media screen and (min-width: 768px) {
     header {
         padding: 40px 30px;
@@ -297,6 +309,7 @@ a i {
 
 }
 
+/* @media query for large laptops and big ipad screens (min-width: 992px) */
 @media screen and (min-width: 992px) {
     #social ul {
         padding-left: 300px;
@@ -321,7 +334,7 @@ a i {
         font-size: 18px;
     }
 }
-
+/* @media query for extra large screens (min-width: 1200px) */
 @media screen and (min-width: 1200px) {
 
     .question .next, .restart {
