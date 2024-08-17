@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         if(index === correctAnswerIndex) {
                             choice.classList.add('correct');
                             correctAnswers++;
+
+                            if (index === document.querySelectorAll('.quiz-area').length -1) {
+                                endTheQuiz();
+                            }
                         } else {
                             choice.classList.add('incorrect');
                             incorrectAnswers++;
