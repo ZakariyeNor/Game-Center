@@ -46,7 +46,20 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 - Make the questions random.
 
-## MockUps and wireframes
+## UX/UI
+
+### User Goals
+- 
+
+### Site Owner Goals
+- 
+
+### Target Audience
+  - 
+
+### User Stories
+  - 
+## Mockups
   - I use simple, consistent page layouts and responsive design.
 
 ### Header, Landing Page and Footer
