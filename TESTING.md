@@ -11,20 +11,17 @@ descendant of the section
 element.
 From line 24, column 9; to line
 24, column 24
->↩ <main id="quiz">↩↩
 - Error: Duplicate ID
 ans14.
 From line 220, column 9; to line
 220, column 39
 >↩ <div class="answer"
-id="ans14">↩
 - Warning: The first
 occurrence of ID ans14
 was here.
 From line 51, column 13; to line
 51, column 43
 <div class="answer"
-id="ans14">↩
 
 ### The solution of the three errors
 
