@@ -15,13 +15,12 @@ From line 24, column 9; to line
 ans14.
 From line 220, column 9; to line
 220, column 39
->↩ <div class="answer"
 - Warning: The first
 occurrence of ID ans14
 was here.
 From line 51, column 13; to line
 51, column 43
-<div class="answer"
+div class="answer"
 
 ### The solution of the three errors
 
