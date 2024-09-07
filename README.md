@@ -49,7 +49,10 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 ## UX/UI
 
 ### User Goals
-- 
+- As a user I want to start the quiz quickly by clicking a button.
+- As a user I want to select my answers easily and see immediately if they are correct or incorrect.
+- As a user I want to move through the quiz one question at a time using a "next" button, and I want to know when I've reached the last question.
+- I want the option to restart the quiz and try again if I want to improve my score.
 
 ### Site Owner Goals
 - 
