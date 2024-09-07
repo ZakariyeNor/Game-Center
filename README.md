@@ -61,6 +61,7 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 - Give them the result message at the end of the quiz
 - Add Social media links so the user can get more information about the quiz
 - Ensure that the restart functionality works smoothly, allowing users to reset the quiz to its initial state and begin again without issues
+- Make sure that the user can select only one answer per question
 
 ### Target Audience
 
@@ -71,7 +72,10 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 
 ### User Stories
 
-  - 
+  - As a student user I want to practise general knowledge on a modern website.
+  - As a user I want to see correct and incorrect answers and result message at the end.
+  - As a user I want be able to start and restart the quiz any time
+
 
 ## Mockups
   - I use simple, consistent page layouts and responsive design.
