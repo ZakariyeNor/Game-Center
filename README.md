@@ -49,13 +49,18 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 ## UX/UI
 
 ### User Goals
+
 - As a user I want to start the quiz quickly by clicking a button.
 - As a user I want to select my answers easily and see immediately if they are correct or incorrect.
 - As a user I want to move through the quiz one question at a time using a "next" button, and I want to know when I've reached the last question.
 - I want the option to restart the quiz and try again if I want to improve my score.
 
 ### Site Owner Goals
-- 
+
+- Provide users with clear visual cues, such as colors or messages, to indicate whether their answers are correct or incorrect.
+- Give them the result message at the end of the quiz
+- Add Social media links so the user can get more information about the quiz
+- Ensure that the restart functionality works smoothly, allowing users to reset the quiz to its initial state and begin again without issues
 
 ### Target Audience
   - 
