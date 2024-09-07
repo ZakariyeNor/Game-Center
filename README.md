@@ -63,7 +63,10 @@ Welcome to the General Knowledge Quiz Game! This engaging and educational game i
 - Ensure that the restart functionality works smoothly, allowing users to reset the quiz to its initial state and begin again without issues
 
 ### Target Audience
-  - 
+  - People who want to test their general knowledge
+  - High school students and adult learners
+  - For people who customized quizzes for team building, training, or marketing campaigns.
+  - For teachers who want use for educational content, practice tests, learning tools, and subject-specific quizzes.
 
 ### User Stories
   - 
