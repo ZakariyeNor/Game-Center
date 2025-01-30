@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //  Function to show the question at the given index 
     function showQuestion(currentQuestionIndex) {
 
+        let answerSelection;
+
         /* Iterate over all quiz areas (questions) and show the current question */
         document.querySelectorAll('.quiz-area').forEach((quiz, inx) => {
             quiz.classList.add('hid');
@@ -82,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextButton.addEventListener('click', function (event) {
                     if (!answerSelected) {
                         event.preventDefault();
-                        alert('Please select an answer before proceesing!');
                     }
+
                 });
             }
         });
