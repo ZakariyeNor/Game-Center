@@ -37,30 +37,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 const answerChoices = quiz.querySelectorAll('.answer .opt');
                 const correctAnswerIndex = Array.from(answerChoices).findIndex(choice => choice.getAttribute('data-correct') === 'true');
                 answerChoices.forEach((choice, index) => {
+                    const newChoice = choice.cloneNode(true);
+                    choice.replaceWith(newChoice);
 
                     /* Add a click event listener to each answer choice */
-                    choice.addEventListener('click', function() {
-
-                        /* Disable all answer buttons after one is clicked */
+                    newChoice.addEventListener('click', function() {
                         answerChoices.forEach(btn => btn.setAttribute('disabled', true));
-                        if(index === correctAnswerIndex) {
+
+                    /* Disable all answer buttons after one is clicked */
+                        if (index === correctAnswerIndex) {
                             console.log('correct')
-                            choice.classList.add('correct');
+                            newChoice.classList.add('correct');
                             correctAnswers++; // Increment the correct answers count
 
                         } else {
-                            console.log('incorrect')
-                            choice.classList.add('incorrect');
+                            console.log('incorrect');
+                            newChoice.classList.add('incorrect');
                             incorrectAnswers++; // Increment the incorrect answers count
                         }
 
                         /* Check if the current question is the last one, end the quiz if it is the last one and show the restart button */
-                        if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length -1) {
+                        if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length - 1) {
                             endTheQuiz();
                             restart.classList.remove('hid');
                         }
                     });
-                 });
+                });
             }
         });
 
@@ -115,7 +117,13 @@ function endTheQuiz() {
 /* click event for the restart button to reset and restart the quiz, reset the current question index 0 and call the function to the reset the quiz */
     restart.addEventListener('click', function() {
         currentQuestionIndex = 0;
+        
+        correctAnswers = 0;
+        incorrectAnswers = 0;
+        console.log('correct', correctAnswers)
+        console.log('incorrect', incorrectAnswers)
         resetQuiz();
+        showQuestion(currentQuestionIndex);
     });
 
 
