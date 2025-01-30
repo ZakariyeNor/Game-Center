@@ -32,16 +32,30 @@ document.addEventListener('DOMContentLoaded', function() {
         /* Iterate over all quiz areas (questions) and show the current question */
         document.querySelectorAll('.quiz-area').forEach((quiz, inx) => {
             quiz.classList.add('hid');
+
             if(inx === currentQuestionIndex) {
                 quiz.classList.remove('hid');
+
                 const answerChoices = quiz.querySelectorAll('.answer .opt');
                 const correctAnswerIndex = Array.from(answerChoices).findIndex(choice => choice.getAttribute('data-correct') === 'true');
+                const nextButton = quiz.querySelector('.next');
+                let answerSelected = false;
+
+                //Disable next button
+                nextButton.setAttribute('disabled', true);
+
+
                 answerChoices.forEach((choice, index) => {
                     const newChoice = choice.cloneNode(true);
                     choice.replaceWith(newChoice);
 
                     /* Add a click event listener to each answer choice */
                     newChoice.addEventListener('click', function() {
+                        if (!answerSelected) {
+                            answerSelected = true;
+                            nextButton.removeAttribute('disabled');
+                        }
+
                         answerChoices.forEach(btn => btn.setAttribute('disabled', true));
 
                     /* Disable all answer buttons after one is clicked */
@@ -62,6 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
                             restart.classList.remove('hid');
                         }
                     });
+                });
+
+                // Prevent next button click i fno answer is selected
+                nextButton.addEventListener('click', function (event) {
+                    if (!answerSelected) {
+                        event.preventDefault();
+                        alert('Please select an answer before proceesing!');
+                    }
                 });
             }
         });
