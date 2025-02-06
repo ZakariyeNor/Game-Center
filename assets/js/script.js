@@ -27,47 +27,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 //  Function to show the question at the given index 
-    function showQuestion(currentQuestionIndex) {
+function showQuestion(currentQuestionIndex) {
 
-        let answerSelection;
+    /* Iterate over all quiz areas (questions) and show the current question */
+    document.querySelectorAll('.quiz-area').forEach((quiz, inx) => {
+        quiz.classList.add('hid');
 
-        /* Iterate over all quiz areas (questions) and show the current question */
-        document.querySelectorAll('.quiz-area').forEach((quiz, inx) => {
-            quiz.classList.add('hid');
+        if (inx === currentQuestionIndex) {
+            quiz.classList.remove('hid');
 
-            if(inx === currentQuestionIndex) {
-                quiz.classList.remove('hid');
+            const answerChoices = quiz.querySelectorAll('.answer .opt');
+            const correctAnswerIndex = Array.from(answerChoices).findIndex(choice => choice.getAttribute('data-correct') === 'true');
+            const nextButton = quiz.querySelector('.next');
+            let answerSelected = false;
+            let hasAnswered = false;
 
-                const answerChoices = quiz.querySelectorAll('.answer .opt');
-                const correctAnswerIndex = Array.from(answerChoices).findIndex(choice => choice.getAttribute('data-correct') === 'true');
-                const nextButton = quiz.querySelector('.next');
-                let answerSelected = false;
+            // Disable the next button initially
+            nextButton.setAttribute('disabled', true);
 
-                //Disable next button
-                nextButton.setAttribute('disabled', true);
+            answerChoices.forEach((choice, index) => {
+                const newChoice = choice.cloneNode(true);
+                choice.replaceWith(newChoice);
 
+                /* Add a click event listener to each answer choice */
+                newChoice.addEventListener('click', function () {
+                    if (!hasAnswered) {
+                        hasAnswered = true;  // Mark the question as answered
+                        answerSelected = true;
 
-                answerChoices.forEach((choice, index) => {
-                    const newChoice = choice.cloneNode(true);
-                    choice.replaceWith(newChoice);
+                        // Enable the Next button after selecting an answer
+                        nextButton.removeAttribute('disabled');
 
-                    /* Add a click event listener to each answer choice */
-                    newChoice.addEventListener('click', function() {
-                        if (!answerSelected) {
-                            answerSelected = true;
-                            nextButton.removeAttribute('disabled');
-                        }
-
+                        // Disable all other answers after one is clicked
                         answerChoices.forEach(btn => btn.setAttribute('disabled', true));
 
-                    /* Disable all answer buttons after one is clicked */
+                        /* Check if the selected answer is correct */
                         if (index === correctAnswerIndex) {
-                            console.log('correct')
                             newChoice.classList.add('correct');
                             correctAnswers++; // Increment the correct answers count
-
                         } else {
-                            console.log('incorrect');
                             newChoice.classList.add('incorrect');
                             incorrectAnswers++; // Increment the incorrect answers count
                         }
@@ -77,30 +75,38 @@ document.addEventListener('DOMContentLoaded', function() {
                             endTheQuiz();
                             restart.classList.remove('hid');
                         }
-                    });
-                });
-
-                // Prevent next button click i fno answer is selected
-                nextButton.addEventListener('click', function (event) {
-                    if (!answerSelected) {
-                        event.preventDefault();
                     }
-
                 });
-            }
-        });
+            });
 
-        /* If it's the last question, hide 'next' buttons and show restart button, otherwise, show 'next' buttons and hide restart button */
-        if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length - 1) {
-            document.querySelectorAll('.next').forEach(button => button.classList.add('hid'));
-            restart.classList.remove('hid');
-        } else {
-            document.querySelectorAll('.next').forEach(button => button.classList.remove('hid'));
-            restart.classList.add('hid'); // hide restart button until the last question. 
-            start.classList.add('hid');
+            // Prevent next button click if no answer is selected
+            nextButton.addEventListener('click', function (event) {
+                if (!answerSelected) {
+                    event.preventDefault();
+                } else {
+                    // Reset flags for the next question
+                    hasAnswered = false;
+                    answerSelected = false;
+                    // Move to the next question
+                    currentQuestionIndex++;
+                    showQuestion(currentQuestionIndex);
+                }
+            });
         }
-    
+    });
+
+    /* If it's the last question, hide 'next' buttons and show restart button, otherwise, show 'next' buttons and hide restart button */
+    if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length - 1) {
+        document.querySelectorAll('.next').forEach(button => button.classList.add('hid'));
+        restart.classList.remove('hid');
+    } else {
+        document.querySelectorAll('.next').forEach(button => button.classList.remove('hid'));
+        restart.classList.add('hid'); // hide restart button until the last question
+        start.classList.add('hid');
     }
+
+}
+
 
 
 // Add click event listeners to all 'next' buttons to go to the next question
