@@ -203,6 +203,33 @@ a i {
     color: rgb(43, 156, 226);
     left: 12px;
 }
+
+/* Alert messege displaying style */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-out, top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.alert.correct {
+    background-color: #4CAF50;  /* Green for correct */
+    color: white;
+}
+
+.alert.incorrect {
+    background-color: #F44336;  /* Red for incorrect */
+    color: white;
+}
+
+
 /* @media query for extra smaller phone screens (max-width: 576px) */
 @media screen and (max-width: 576px)  {
     .quiz-area h1 {

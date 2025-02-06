@@ -70,6 +70,29 @@ function showQuestion(currentQuestionIndex) {
                             incorrectAnswers++; // Increment the incorrect answers count
                         }
 
+                        /* Show alert message for correct or incorrect */
+                        const alertMessage = document.getElementById('alert-message');
+                        if (index === correctAnswerIndex) {
+                            alertMessage.textContent = 'Correct! Great job!';
+                            alertMessage.classList.remove('incorrect');
+                            alertMessage.classList.add('correct');
+                        } else {
+                            alertMessage.textContent = 'Incorrect! Try again.';
+                            alertMessage.classList.remove('correct');
+                            alertMessage.classList.add('incorrect');
+                        }
+
+                        alertMessage.style.display = 'block';
+                        alertMessage.style.opacity = 1;
+                        alertMessage.style.top = '20px';  // Pop up
+
+                        // Hide the alert after a short delay
+                        setTimeout(() => {
+                            alertMessage.style.opacity = 0;
+                            alertMessage.style.top = '-50px'; // Slide out
+                            setTimeout(() => alertMessage.style.display = 'none', 500); // Hide it after animation
+                        }, 2000); 
+
                         /* Check if the current question is the last one, end the quiz if it is the last one and show the restart button */
                         if (currentQuestionIndex === document.querySelectorAll('.quiz-area').length - 1) {
                             endTheQuiz();
